@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddLabelFragment">
+
+    <!-- Ekleme tuşu -->
+
+    <!-- RecyclerView kullanarak labelları göster -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Input girisi -->
+            <EditText
+                android:id="@+id/editTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Label adını girin"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Ekleme tuşu -->
+            <Button
+                android:id="@+id/buttonAddLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ekle"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
